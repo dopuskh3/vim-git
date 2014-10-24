@@ -54,7 +54,7 @@ syn match   gitcommitWarning		"\%^[^#].*: needs merge$" nextgroup=gitcommitWarni
 syn match   gitcommitWarning		"^[^#].*: needs merge$" nextgroup=gitcommitWarning skipnl contained
 syn match   gitcommitWarning		"^\%(no changes added to commit\|nothing \%(added \)\=to commit\)\>.*\%$"
 
-hi def link gitcommitSummary		Keyword
+hi def link gitcommitSummary		Type
 hi def link gitcommitComment		Comment
 hi def link gitcommitUntracked		gitcommitComment
 hi def link gitcommitDiscarded		gitcommitComment
@@ -78,7 +78,7 @@ hi def link gitcommitDiscardedArrow	gitcommitArrow
 hi def link gitcommitSelectedArrow	gitcommitArrow
 hi def link gitcommitUnmergedArrow	gitcommitArrow
 hi def link gitcommitArrow		gitcommitComment
-"hi def link gitcommitOverflow		Error
+hi def link gitcommitOverflow		Error
 hi def link gitcommitBlank		Error
 
 let b:current_syntax = "gitcommit"
